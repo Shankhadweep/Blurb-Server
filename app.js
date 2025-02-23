@@ -56,7 +56,7 @@ app.set("io", io);
 // Using Middlewares Here
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors(corsOptions));
+app.use(cors({corsOptions}));
 
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/chat", chatRoute);
